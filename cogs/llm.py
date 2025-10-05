@@ -5,7 +5,7 @@ from openai import OpenAI
 print("\nLoading Large Barry Model")
 
 llm = OpenAI(
-  api_key="sk-navy-L67UHb-NSsFtAeXbZ-bmiRqJJ6aCNYkliPvBsv2kCGQ",
+  api_key="REPLACE THIS WITH YOUR KEY",
   base_url="https://api.navy/v1",
 )
 
@@ -76,4 +76,5 @@ class Llm(commands.Cog):
       chat_history.append({"role": "assistant", "content": reply})
 
 async def setup(bot):
+
   await bot.add_cog(Llm(bot))
